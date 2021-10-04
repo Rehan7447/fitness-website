@@ -1,0 +1,26 @@
+@font-face {
+  font-family: Nunito;
+  src: url('./fonts/Nunito-Regular.ttf');
+}
+@font-face {
+  font-family: Nunito-Semibold;
+  src: url('./fonts/Nunito-SemiBold.ttf');
+}
+@font-face {
+  font-family: Nunito-bold;
+  src: url('./fonts/Nunito-Bold.ttf');
+}
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+ 
+}
+.active{
+  color: var(--secondary) !important;
+}
+:root{
+  --primary:#F6EEE0;
+  --secondary: #51A095;
+
+}
