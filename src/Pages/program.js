@@ -5,23 +5,24 @@ import pic1 from "../img/Footer/Freya-Logo-Claor.png";
 import bg from "../img/Freyas-Program-background-2.png";
 import MuseModal from "../component/modals/museModal/museModal";
 import SirenModal from "../component/modals/sirenModal/sirenModal";
-import GoodessModal from "../component/modals/goddessModal/goodessModal";
+import GoodessModal from '../component/modals/goddessModal/goodessModal'
 import "../css/program.css";
 import Footer from "../component/footer";
 import logo1 from "../img/Freya-Logo.svg";
 import icon1 from "../img/Footer/f-l1.png";
 import icon2 from "../img/Footer/i-l1.png";
 import icon3 from "../img/Footer/insta-1.png";
-import bg2 from "../img/FreyaPrograms-Mv.png";
+import bg2 from '../img/FreyaPrograms-Mv.png'
 export default function Program() {
   return (
     <>
-    <title>Programs</title>
-      <Header page="program" color=" #0E4952" logo={pic1} paracolor="#F6EEE0" />
+     <title>Programs</title>
+     <meta name="description"  content="Проверенные людьми и временем онлайн-программы для идеального тела" />
+      <Header page="program" color=" #0E4952" logo={pic1} paracolor="#F6EEE0" spancolor="white" />
       <div className="program-all-container">
         {/* <div className="programs-bg"></div> */}
-        <img src={bg} className="programs-bg" id="pimg1" />
-        <img src={bg2} className="programs-bg" id="pimg2" />
+        <img src={bg} className="programs-bg" id="pimg1"/>
+        <img src={bg2} className="programs-bg" id="pimg2"/>
         <div className="program-container">
           <h2 className="program-h2">ПОПРОБУЙТЕ СПА ДЛЯ</h2>
           <h1 className="program-h1">ДУШИ И УМА</h1>
@@ -30,8 +31,8 @@ export default function Program() {
             женщин
           </p>
           <h2 className="program-h21" id="ph22">
-            Мы возвращаем женщинам вкус к жизни,
-          </h2>
+              Мы возвращаем женщинам вкус к жизни,
+            </h2>
           <div className="program-container1">
             <h2 className="program-h21" id="ph21">
               Мы возвращаем женщинам вкус к жизни,
@@ -142,12 +143,18 @@ export default function Program() {
                 подписке и наших программах, связавшись с нами.
               </p>
               <div className="program-sec6-btncontainer">
-                <button class="program-sec6-btn1">Имя</button>
-                <button class="program-sec6-btn1">Телефон</button>
+                <input class="program-sec6-btn1" placeholder="Имя" />
+              <input class="program-sec6-btn1" placeholder="Телефон" />
+             
               </div>
               <div className="program-sec6-btncontainer">
-                <button class="program-sec6-btn1">Email</button>
-                <button class="program-sec6-btn1">Время</button>
+                <input class="program-sec6-btn1" placeholder="Email" />
+                 <select name="time" id="time" className="program-sec6-btn1">
+    <option value="Время">Время</option>
+   
+  </select>
+             
+                
               </div>
               <div className="hs10-btncontainer">
                 <button class="ps6-bottombtn">Отправить</button>

@@ -251,8 +251,19 @@ hr {
   background-color: #3b5998;
   color: #f6eee0;
 }
+
+.museFb:active{
+  background-color: #f6eee0;
+  color: #3b5998;
+}
+
 .museGoogle {
   border: 1px solid black;
+}
+
+.museGoogle:active{
+  background-color:antiquewhite;
+  color: #f6eee0;
 }
 
 .ConfirmBody {

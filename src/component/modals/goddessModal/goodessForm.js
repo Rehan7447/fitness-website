@@ -1,5 +1,4 @@
 import React from "react";
-import ModalFooter from "../modalFooter";
 
 export default function GoodessForm(props) {
   const submitHandler = props.submit;
@@ -66,15 +65,31 @@ export default function GoodessForm(props) {
         <hr /> <span>или</span> <hr />
       </div>
       <div className="bottomButtons">
-        <button className="museButton museGoogle">Войти через Google</button>
-        <button className="museButton museFb">Войти через Facebook</button>
+        <button
+          className="museButton museGoogle"
+          onClick={(event) =>
+            window.open(
+              "https://accounts.google.com/signin/v2/identifier?flowName=GlifWebSignIn&flowEntry=ServiceLogin",
+              "popUpWindow",
+              "height=400,width=600,left=10,top=10,,scrollbars=yes,menubar=no"
+            )
+          }
+        >
+          Войти через Google
+        </button>
+        <button
+          className="museButton museFb"
+          onClick={(event) =>
+            window.open(
+              "https://www.facebook.com",
+              "popUpWindow",
+              "height=400,width=600,left=10,top=10,,scrollbars=yes,menubar=no"
+            )
+          }
+        >
+          Войти через Facebook
+        </button>
       </div>
-      <ModalFooter
-        fb={"/assets/Footer/icons_Freya_FB1.png"}
-        vk={"/assets/Footer/icons_Freya_VK1.png"}
-        insta={"/assets/Footer/instagram1.png"}
-        type={"logoFooter"}
-      />
     </div>
   );
 }

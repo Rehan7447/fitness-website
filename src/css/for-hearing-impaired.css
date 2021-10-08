@@ -117,6 +117,13 @@ body {
 	margin-top: 3rem;
 }
 
+.sec3-btn:hover {
+	color: #0e4952;
+	background-color: transparent;
+	border: 1px solid #0e4952;
+	margin-top: 2.9rem;
+}
+
 .sec3-small-image1 {
 	width: 15%;
 	margin-bottom: 2rem;
@@ -354,15 +361,17 @@ body {
 	}
 
 	.sec3-btn {
-		color: #f6eeee;
-		background-color: #0e4952;
 		padding: 3px 30px;
 		border-radius: 20px;
 		font-size: 16px;
-		font-weight: 600;
-		border: none;
-		margin-top: 0;
 		margin: 1rem;
+	}
+
+	.sec3-btn:hover {
+		color: #0e4952;
+		background-color: transparent;
+		border: 1px solid #0e4952;
+		margin-top: 0.85rem;
 	}
 
 	.sec3-small-image1 {

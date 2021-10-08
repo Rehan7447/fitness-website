@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import { Link } from "react-router-dom";
 import Footer from "../component/footer";
 import Header from "../component/header";
 import img1 from "../img/Special Clients/Free Therapy/background-Img-1.png";
@@ -14,7 +15,6 @@ export default function Freetherapy() {
 	return (
 		<div>
 			<title>Free therapy</title>
-			{/* <Header style={{ paddingBottom: "0px" }} /> */}
 			<Header
 				page="for-hearing-impaired"
 				color="#F6EEE0"
@@ -96,7 +96,7 @@ export default function Freetherapy() {
 								<img className="image2" src={img2} />
 							</div>
 
-							<div className="flex-mid">
+							<div className="ft-flex-mid">
 								<button className="button" size="sm">
 									Начать
 								</button>

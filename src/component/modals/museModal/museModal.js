@@ -10,6 +10,7 @@ function MyVerticallyCenteredModal(props) {
       {...props}
       size="lg"
       aria-labelledby="contained-modal-title-vcenter"
+      
     >
       <Modal.Body className="museBody">
         {/* <a onClick={props.onHide} className="closeModal">

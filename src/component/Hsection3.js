@@ -4,7 +4,7 @@ import pic2 from '../img/women2.png';
 import pic3 from '../img/women3.png';
 import icon1 from '../img/tick.svg';
 import icon2 from '../img/Heart-blue.png';
-import icon3 from '../img/iconO.svg';
+import icon3 from '../img/Оicon.svg';
 import icon4 from '../img/Woman-symbol.png'
 import RoundImg from '../component/roundImage'
 const Hsection3=()=>{
@@ -47,9 +47,9 @@ return(
                 <div className="w-txt">
                   <p className="w-txt-1">  Galina </p>
                   <p className="w-txt-2"> КПТ;</p>
-                  <p className="w-txt-5">Счастливый тот, кто</p>
-                  <p className="w-txt-5">умеет</p>
-                  <p className="w-txt-5">адаптироваться</p>
+                  <p className="w-txt-5">Экстренная помощь</p>
+                  <p className="w-txt-5">“Женщина красива,</p>
+                  <p className="w-txt-5"> когда она счастлива”</p>
                   </div>
                 </div>
                 </div>

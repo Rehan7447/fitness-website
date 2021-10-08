@@ -94,6 +94,24 @@ body {
 	padding: 1rem;
 }
 
+.gt-button {
+	color: #f6eeee;
+	background-color: #0e4952;
+	padding: 3px 20px;
+	border-radius: 20px;
+	font-size: 1.5vw;
+	font-weight: 600;
+	border: none;
+	margin-bottom: 2rem;
+}
+
+.gt-button:hover {
+	color: #0e4952;
+	background-color: transparent;
+	border: 1px solid #0e4952;
+	margin-bottom: 1.8rem;
+}
+
 .space-bottom {
 	padding-bottom: 1.25rem;
 }
@@ -146,6 +164,11 @@ body {
 .column-flex {
 	display: flex;
 	flex-direction: column-reverse;
+}
+
+.gt-flex-mid {
+	display: flex;
+	justify-content: center;
 }
 
 @media only screen and (max-width: 767px) {
@@ -242,9 +265,12 @@ body {
 		text-align: right !important;
 	}
 
-	.flex-mid {
+	.gt-flex-mid {
 		display: flex;
 		justify-content: center;
-		margin-bottom: 2rem;
+	}
+
+	.gt-button {
+		font-size: 20px;
 	}
 }

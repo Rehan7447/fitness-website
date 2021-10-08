@@ -1,5 +1,7 @@
 /* header styling */
-
+.nav-link:hover{
+ color:  var(--secondary) !important;
+}
   .header-padd-lr{
     padding-left: 6rem;
     padding-right: 6rem;
@@ -65,7 +67,7 @@
   font-size: 16px;
   }
   .dropdown-item:hover{
-    background-color: #F5D7B4;
+    background-color: #F5D7B4 !important;
   
   }
   .drop-item-active{

@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import pic1 from '../img/img-v1.svg'
 import pic2 from '../img/ptd.png'
+import pic3 from '../img/Vector 15.png'
 const Hsection9=()=>{
     return(
         <section className="hsection9">
@@ -11,7 +12,9 @@ const Hsection9=()=>{
               <div className="col-md-6" id="hs9-firstcontent">
                   <p className="hs9-p2">За внутренними изменениями следуют <span>внешние</span> </p>
                   <p className="hs9-p3">Мы создали специальные программы трансформации, которые помогут преобразить не только ваши мысли, но и тело. А еще — достигнуть личных или профессиональных целей</p>
-                  <div className="row">
+                  <div className="row" id="hs9cards">
+                <img className="hs9-vector1" src={pic3}/>
+                <img className="hs9-vector2" src={pic3}/>
               <div className="col-6 col-md-5 col-lg-4">
               <div class="card hs9-cards" >
   <div class="card-body">
@@ -40,6 +43,7 @@ const Hsection9=()=>{
 </div>
               </div>
               <div className="col-6 col-md-5 col-lg-4" id="hs9card3">
+                  
               <div class="card hs9-cards" >
   <div class="card-body">
     <h5 class="card-title">БОГИНЯ</h5>

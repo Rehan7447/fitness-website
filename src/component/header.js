@@ -8,7 +8,12 @@ export default function Header(props) {
   const [item3, setitem3] = useState("dropdown-item");
   const [nav, setnav] = useState("navbar navbar-expand-lg ");
   let btnstyle = "";
-
+  let [scolor, setscolor] = useState("");
+  if (props.spancolor == null || props.spancolor == "") {
+    scolor = "#000000";
+  } else {
+    scolor = props.spancolor;
+  }
   function DropMenu() {
     showMenu == "hide" ? setMenu("show") : setMenu("hide");
   }
@@ -44,7 +49,11 @@ export default function Header(props) {
           aria-label="Toggle navigation"
         >
           <span class="navbar-toggler-icon">
-            <i class="fa fa-bars fa-lg" aria-hidden="true"></i>
+            <i
+              class="fa fa-bars fa-lg"
+              aria-hidden="true"
+              style={{ color: scolor }}
+            ></i>
           </span>
         </div>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
@@ -87,18 +96,25 @@ export default function Header(props) {
               )}
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#" style={{ color: props.paracolor }}>
+              <a
+                class="nav-link"
+                href="https://www.blog.freyamind.com/blog"
+                style={{ color: props.paracolor }}
+              >
                 Статьи
               </a>
             </li>
 
             <li class="nav-item dropdown">
-              {props.page == "home" ? (
+              {props.page == "for-hearing-impaired" ||
+              props.page == "free-therapy" ||
+              props.page == "group-therapy" ? (
                 <a
-                  class="nav-link active"
+                  class="nav-link "
                   aria-current="page"
                   href="#"
                   onClick={DropMenu}
+                  style={{ color: "#51A095" }}
                 >
                   Инклюзивные программы
                 </a>

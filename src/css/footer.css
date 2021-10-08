@@ -24,6 +24,10 @@ margin-bottom: 0px;
 #footer-part2{
     padding-left: 5rem;
 }
+p a{
+    text-decoration:none;
+    color:black
+}
 
 .footer-min{
     display: none !important;
@@ -58,6 +62,7 @@ line-height: 16px;
 color: #000000;
     }
 }
+
 @media(max-width:1100px){
     .footer-large{
         padding-left: 2rem !important;

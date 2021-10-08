@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import { Link } from "react-router-dom";
 import Footer from "../component/footer";
 import Header from "../component/header";
 import img1 from "../img/Special Clients/Mom_s Space/20210827_freya_illustrations_coral_nobg-06.png";
@@ -12,12 +13,12 @@ import logo1 from "../img/f-logo.svg";
 import icon1 from "../img/Footer/Facebook.png";
 import icon2 from "../img/Footer/VK.png";
 import icon3 from "../img/Footer/Instagram.png";
-import logo from "../img/f-logo.svg"
+import logo from "../img/f-logo.svg";
 
-export default function Freetherapy() {
+export default function ForMoms() {
   return (
     <div>
-		<title>For moms</title>
+      <title>For moms</title>
       <meta
         name="description"
         content="Мама? Предлагаем адаптированные программы для восстановления фигуры
@@ -53,9 +54,11 @@ export default function Freetherapy() {
               <h2 className="fm-sec3-text">ОНЛАЙН ТЕРАПИЯ</h2>
             </div>
             <div className="fm-sec3-btn-area">
-              <button className="fm-sec3-btn" size="sm">
-                Подробнее
-              </button>
+              <Link to="/">
+                <button className="fm-sec3-btn" size="sm" href>
+                  Подробнее
+                </button>
+              </Link>
             </div>
           </div>
           <div className="col-md-4">
@@ -75,16 +78,18 @@ export default function Freetherapy() {
               <h2 className="fm-sec3-text2">ПРОГРАММЫ ТРАНСФОРМАЦИИ</h2>
             </div>
             <div className="fm-sec3-btn-area2">
-              <button className="fm-sec3-btn" size="sm">
-                Подробнее
-              </button>
+              <Link to="/program">
+                <button className="fm-sec3-btn" size="sm">
+                  Подробнее
+                </button>
+              </Link>
             </div>
           </div>
           <div className="col-md-4">
             <div className="fm-sec3-revcol">
               <div className="fm-sec3-img3-area">
                 <img
-                  className="sec2-upper-img"
+                  className="sec2-lower-img"
                   src={lower_img}
                   alt="loading..."
                 />
@@ -92,8 +97,15 @@ export default function Freetherapy() {
               </div>
               <h2 className="fm-sec3-text">СТАТЬИ</h2>
             </div>
-            <div className="fm-sec3-btn-area">
-              <button className="fm-sec3-btn" size="sm">
+            <div className="fm-sec3-btn-area3">
+              <button
+                className="fm-sec3-btn"
+                size="sm"
+                onClick={(event) =>
+                  (window.location.href =
+                    "https://www.blog.freyamind.com/booking-calendar")
+                }
+              >
                 Подробнее
               </button>
             </div>

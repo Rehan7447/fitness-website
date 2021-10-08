@@ -18,11 +18,8 @@ import pic1 from "../img/Footer/freya-logo.png";
 export default function Home() {
   return (
     <div>
-      <title>Home page</title>
-      <meta
-        name="description"
-        content="Избавляться от лишнего веса здорово с Толстым! Здесь сбрасывают от 4 до 71 кг. "
-      ></meta>
+      <title>Home</title>
+      <meta name="description" content="Избавляться от лишнего веса здорово с Толстым! Здесь сбрасывают от 4 до 71 кг" />
       <Header
         page="home"
         color="#F6EEE0"

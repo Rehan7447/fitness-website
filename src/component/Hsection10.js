@@ -11,9 +11,14 @@ const Hsection10=()=>{
         <div class="container-fluid hsection10-padd-lr">
             <h2 className="hs10-h2">ХОТИТЕ, МЫ САМИ<span> ВАМ НАПИШЕМ?</span></h2>
             <div className="hs10-btn1-container">
-            <button class="hs10-btn1" >Имя</button>
-            <button class="hs10-btn1" >Email</button>
-            <button class="hs10-btn1" >Время</button>
+                <input class="hs10-btn1" placeholder="Имя"/>
+                <input class="hs10-btn1" placeholder="Email"/>
+                <select name="time" id="time" className="hs10-btn1">
+    <option value="Время">Время</option>
+   
+  </select>
+               
+           
             </div>
             <div className="hs10-btncontainer">
                 <button class="hs10-btn" >Отправить</button>

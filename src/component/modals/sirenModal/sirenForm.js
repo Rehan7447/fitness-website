@@ -1,5 +1,4 @@
 import React from "react";
-import ModalFooter from "../modalFooter";
 
 export default function SirenForm(props) {
   const submitHandler = props.submit;
@@ -66,15 +65,31 @@ export default function SirenForm(props) {
         <hr className="sirenHr" /> <span>или</span> <hr className="sirenHr" />
       </div>
       <div className="bottomButtons">
-        <button className="museButton museGoogle">Войти через Google</button>
-        <button className="museButton museFb">Войти через Facebook</button>
+        <button
+          className="museButton museGoogle"
+          onClick={(event) =>
+            window.open(
+              "https://accounts.google.com/signin/v2/identifier?flowName=GlifWebSignIn&flowEntry=ServiceLogin",
+              "popUpWindow",
+              "height=400,width=600,left=10,top=10,,scrollbars=yes,menubar=no"
+            )
+          }
+        >
+          Войти через Google
+        </button>
+        <button
+          className="museButton museFb"
+          onClick={(event) =>
+            window.open(
+              "https://www.facebook.com",
+              "popUpWindow",
+              "height=400,width=600,left=10,top=10,,scrollbars=yes,menubar=no"
+            )
+          }
+        >
+          Войти через Facebook
+        </button>
       </div>
-      <ModalFooter
-        fb={"/assets/Footer/Facebook.png"}
-        vk={"/assets/Footer/VK.png"}
-        insta={"/assets/Footer/Instagram.png"}
-        type={"sirenLogoFooter"}
-      />
     </div>
   );
 }

@@ -10,7 +10,7 @@ export default function AboutSection1(){
             <div className="about-section1-imgcontainer2">
             <img src={pic1}/>
             <div className="aboutsection1-content">
-            <h1>О <span>НАС</span> </h1>
+            <h1 className="ab1-h1">О <span>НАС</span> </h1>
             <p>Узнайте о нашей миссии и целях</p>
             </div>
           

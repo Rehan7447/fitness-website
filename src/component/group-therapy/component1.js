@@ -46,8 +46,8 @@ export default function Component1(props) {
 				<span className="small-text space-bottom ">
 					Размер группы – 10 человек
 				</span>
-				<div className="flex-mid">
-					<button className="button" size="sm" onClick={onSubmit}>
+				<div className="gt-flex-mid">
+					<button className="gt-button" size="sm" onClick={onSubmit}>
 						Регистрация
 					</button>
 				</div>
